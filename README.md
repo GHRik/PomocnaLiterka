@@ -12,7 +12,7 @@
 ## Features
 
 1. [WIP]  "Arbiter" - checking if your word can be used(***ONLINE***).
-```
+```diff
 + For the first i want to create version which only online searching
 - But after all offline will be available too ;)
 ```
@@ -50,13 +50,17 @@ Used technology
 At this moment i will show you mocking activity, enjoy!
 
 ##### Main Activity
-![Main_Activity]()
+![Main_Activity](https://github.com/GHRik/PomocnaLiterka/blob/main/mockingPNG/main_activity.PNG?raw=true)
 
 ##### Arbiter
-![Arbiter]()
+![Arbiter](https://github.com/GHRik/PomocnaLiterka/blob/main/mockingPNG/arbiter.PNG?raw=true)
 
 ##### Stoper
-![Stoper]()
+![Stoper](https://github.com/GHRik/PomocnaLiterka/blob/main/mockingPNG/stoper.PNG?raw=true)
+
+##### Poszukiwacz słów
+![Word_finder](https://github.com/GHRik/PomocnaLiterka/blob/main/mockingPNG/finder.PNG?raw=true)
+
 
 <a name="lic">.</a>
 ## License
