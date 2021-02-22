@@ -1,0 +1,3 @@
+[submodule "SjpAPI"]
+	path = SjpAPI
+	url = https://github.com/GHRik/SjpAPI/
