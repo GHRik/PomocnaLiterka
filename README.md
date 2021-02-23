@@ -48,8 +48,7 @@ Used technology
 
 [WIP] Example using will be there if any activity will be working :)
 Working activity is "Arbiter" but it is in a "rough" state
-![Arbiter_working](https://www.youtube.com/watch?fbclid=IwAR31OuzPBh-E8jY40_v7svwQS4Okbv4GMS7XvsS-x0tt9-t5ExqY_H3uvZQ&v=ObImR1PiZHY&feature=youtu.be&ab_channel=DamianPanasiuk)
-
+[![Arbiter_working](https://github.com/GHRik/PomocnaLiterka/blob/main/examplePNGForVid/Arbiter.PNG)](https://youtu.be/ObImR1PiZHY)
 
 At this moment i will show you mocking activity, enjoy!
 
