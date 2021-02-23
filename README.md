@@ -53,6 +53,9 @@ Used technology
 Working activity is "Arbiter" but it is in a "rough" state
 [![Arbiter_working](https://github.com/GHRik/PomocnaLiterka/blob/main/examplePNGForVid/Arbiter.PNG)](https://youtu.be/ObImR1PiZHY)
 
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
 At this moment i will show you mocking activity, enjoy!
 
 ##### Main Activity
