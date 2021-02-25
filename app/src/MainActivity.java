@@ -3,7 +3,9 @@ package com.pomocnaliterka;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                     for (int i = 0; i < count; i++) {
                         String canBeUsed = jsonObject.get("canBeUsed"+"["+i+"]").toString();
                         String meaningOf = jsonObject.get("meaning"+"["+i+"]").toString();
+                        String variant = jsonObject.get("variant"+"["+i+"]").toString();
 
                         if (canBeUsed == "true") {
                             canBeUsed = "Dopuszczalne";
@@ -59,17 +62,43 @@ public class MainActivity extends AppCompatActivity {
                             canBeUsed = "Niedopuszczalne";
                         }
 
-
                         TextView use=new TextView(this);
                         use.setText(canBeUsed);
+                        use.setGravity(Gravity.CENTER_VERTICAL);
                         use.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
                         use.setTextSize(20);
                         linearLayout.addView(use);
 
+                        TextView varia=new TextView(this);
+                        varia.setText("Od słowa: "+variant);
+                        varia.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                        varia.setTextSize(15);
+                        varia.setGravity(Gravity.CENTER_VERTICAL);
+                        linearLayout.addView(varia);
+
 
                         TextView mean = new TextView(this);
-                        mean.setText(meaningOf+"\n");
-                        linearLayout.addView(mean);
+                        if (meaningOf.contentEquals("BAD FORMAT")){
+                            mean.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                            mean.setTextSize(13);
+                            mean.setGravity(Gravity.CENTER_VERTICAL);
+                            mean.setText("\n"+"Po więcej informacji zapraszam na stronę: ");
+
+                            TextView meanLink = new TextView(this);
+                            meanLink.setMovementMethod(LinkMovementMethod.getInstance());
+                            meanLink.setTextSize(15);
+                            meanLink.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                            meanLink.setText("https://www.sjp.pl/"+wordToFind+"\n");
+                            meanLink.setGravity(Gravity.CENTER_VERTICAL);
+                            linearLayout.addView(mean);
+                            linearLayout.addView(meanLink);
+
+                        }
+                        else {
+                            mean.setText(meaningOf + "\n");
+                            mean.setGravity(Gravity.CENTER_VERTICAL);
+                            linearLayout.addView(mean);
+                        }
                     }
 
 
