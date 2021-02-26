@@ -39,7 +39,7 @@ If there is any problem with install, please ***disable GooglePlay protect*** [h
 ##### [IN FUTURE WHEN ALL FUNCTIO WILL BE TESTED]
 1. Download app from android store ;) **(link will be here)**
 
-<a name="examples">.</a>
+<a name="example">.</a>
 ## Examples:
 
 #### Demo Vid! Click on image below :)
