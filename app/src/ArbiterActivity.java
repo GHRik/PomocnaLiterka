@@ -21,6 +21,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.sjp.SjpAPI;
+import com.sjp.StringUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -73,7 +74,7 @@ public class ArbiterActivity extends AppCompatActivity {
 
 
                 try {
-                    meaningOfWordText.setText(wordToFind);
+                    meaningOfWordText.setText(StringUtils.deleteSpecialChar(wordToFind));
 
                     if (jsonOutput.contentEquals("EMPTY")) {
                         TextView mean = new TextView(this);
