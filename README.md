@@ -11,10 +11,9 @@
 <a name="fea">.</a>
 ## Features
 
-1. [WIP]  "Arbiter" - checking if your word can be used(***ONLINE***).
+1. "Arbiter" - checking if your word can be used(***ONLINE***).
 ```diff
-+ For the first i want to create version which only online searching
-- But after all offline will be available too ;)
++ [WIP] offline version, but online version is working ;)
 ```
 2. [WIP] "Word finder" - find any word you can put on the board and prioritizes word which max point you can get.
 3.  [WIP] "Stoper" - set time per round. It is sometimes neccesary when someone play too long.
@@ -34,29 +33,23 @@ Used technology
 <a name="instal">.</a>
 ## Installation
 
-##### [WIP]
-1. Create project in android studio and compile all files from repo
+1. Download [apk version](https://github.com/GHRik/PomocnaLiterka/blob/main/APK/PomocnaLiterka.apk) and install on your android phone
+If there is any problem with install, please ***disable GooglePlay protect*** [how to disable](https://support.mobile-tracker-free.com/hc/en-us/articles/360005346953-How-to-disable-Google-Play-Protect-)
 
-##### [IN FUTURE]
-1. Download apk version and install on your android phone
-
-##### [IN FUTURE FUTURE FUTURE ]
+##### [IN FUTURE WHEN ALL FUNCTIO WILL BE TESTED]
 1. Download app from android store ;) **(link will be here)**
 
 <a name="examples">.</a>
 ## Examples:
 
-[WIP] Example using will be there if any activity will be working :)
-
-
 #### Demo Vid! Click on image below :)
 Working activity is "Arbiter" but it is in a "rough" state
-[![Arbiter_working](https://github.com/GHRik/PomocnaLiterka/blob/main/examplePNGForVid/Arbiter.PNG)](https://youtu.be/ObImR1PiZHY)
+[![Arbiter_working](https://github.com/GHRik/PomocnaLiterka/blob/main/examplePNGForVid/Arbiter.PNG)](https://youtu.be/bmdElGHeX2w)
 
 
 
 -------------------------------------------------------------------------------------------------------------------------------------
-At this moment i will show you mocking activity, enjoy!
+Until all activity will be not projected , help yourself to my mocking photos :p
 
 ##### Main Activity
 ![Main_Activity](https://github.com/GHRik/PomocnaLiterka/blob/main/mockingPNG/main_activity.PNG?raw=true)
