@@ -42,6 +42,7 @@ public class ArbiterActivity extends AppCompatActivity {
         final LinearLayout linearLayout = (LinearLayout)findViewById(R.id.linear);
 
 
+
         nameOfWord.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -74,7 +75,7 @@ public class ArbiterActivity extends AppCompatActivity {
 
 
                 try {
-                    meaningOfWordText.setText(StringUtils.deleteSpecialChar(wordToFind));
+                    meaningOfWordText.setText(wordToFind);
 
                     if (jsonOutput.contentEquals("EMPTY")) {
                         TextView mean = new TextView(this);
