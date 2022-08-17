@@ -1,4 +1,4 @@
-package com.pomocnaliterka;
+package com.example.PomocnaLiterka;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,12 +23,9 @@ public class MainActivity extends AppCompatActivity {
         stoper.setEnabled(false);
         rules.setEnabled(false);
 
-        arbiter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ArbiterActivity.class);
-                startActivity(intent);
-            }
+        arbiter.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, ArbiterActivity.class);
+            startActivity(intent);
         });
     }
 }
