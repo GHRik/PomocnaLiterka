@@ -11,9 +11,6 @@ import androidx.preference.PreferenceManager;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    public static Boolean tournamentMode = true;
-    private SharedPreferences.OnSharedPreferenceChangeListener listener;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,13 +27,6 @@ public class SettingsActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        listener = (prefs1, key) -> {
-            if (key.equals("tournamentMode")) {
-                tournamentMode = !tournamentMode;
-            }
-        };
-        prefs.registerOnSharedPreferenceChangeListener(listener);
     }
 
     @Override

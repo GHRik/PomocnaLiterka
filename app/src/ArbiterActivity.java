@@ -1,8 +1,10 @@
 package com.example.PomocnaLiterka;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
@@ -35,7 +37,7 @@ import sjpapi.api.SjpAPI;
 public class ArbiterActivity extends AppCompatActivity {
 
 
-
+    private Boolean tournamentMode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +52,6 @@ public class ArbiterActivity extends AppCompatActivity {
         final ImageButton settings = findViewById(R.id.action_settings_image);
 
         goButton.setEnabled(false);
-        Log.i("XD", String.valueOf(SettingsActivity.tournamentMode));
 
         nameOfWord.addTextChangedListener(new TextWatcher() {
             @Override
@@ -72,6 +73,8 @@ public class ArbiterActivity extends AppCompatActivity {
 
 
         goButton.setOnClickListener(v -> {
+            final SharedPreferences mSharedPreference= PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+            boolean tournamentMode=(mSharedPreference.getBoolean("tournamentMode", true));
             try {
                 linearLayout.removeAllViews();
                 meaningOfWordText.onEditorAction(EditorInfo.IME_ACTION_DONE);
@@ -98,7 +101,7 @@ public class ArbiterActivity extends AppCompatActivity {
 
                     if (count == -1){
                         TextView use=new TextView(this);
-                        if(SettingsActivity.tournamentMode == true) {
+                        if(tournamentMode == true) {
                             use.setGravity(Gravity.CENTER_VERTICAL);
                             use.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
                             use.setTextSize(20);
@@ -108,7 +111,7 @@ public class ArbiterActivity extends AppCompatActivity {
                             use.setText("Nie znaleziono w słowniku");
                         linearLayout.addView(use);
                     }
-                    if (SettingsActivity.tournamentMode == true && count > 1)
+                    if (tournamentMode == true && count > 1)
                         count = 1;
 
                     for (int i = 0; i < count; i++) {
@@ -130,7 +133,7 @@ public class ArbiterActivity extends AppCompatActivity {
                         use.setTextSize(20);
                         linearLayout.addView(use);
 
-                        if (SettingsActivity.tournamentMode == false) {
+                        if (tournamentMode == false) {
                             TextView varia = new TextView(this);
                             varia.setText("Od słowa: " + variant);
                             varia.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);

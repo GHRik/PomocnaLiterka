@@ -3,13 +3,12 @@
 
     <PreferenceCategory app:title="Tryb">
 
-        <SwitchPreferenceCompat
+        <SwitchPreference
             android:defaultValue="true"
-            app:defaultValue="true"
             app:key="tournamentMode"
+            app:title="Tryb turniejowy"
             app:summaryOff="Wszystko"
-            app:summaryOn="Tylko dozwolone/niedozwolone"
-            app:title="Tryb turniejowy" />
+            app:summaryOn="Tylko dozwolone/niedozwolone"/>
 
     </PreferenceCategory>
 
