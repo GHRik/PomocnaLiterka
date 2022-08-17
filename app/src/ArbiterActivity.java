@@ -3,6 +3,7 @@ package com.example.PomocnaLiterka;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -24,8 +25,6 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -36,9 +35,7 @@ import sjpapi.api.SjpAPI;
 
 public class ArbiterActivity extends AppCompatActivity {
 
-
-    private Boolean tournamentMode;
-
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,7 +78,6 @@ public class ArbiterActivity extends AppCompatActivity {
                 String wordToFind = nameOfWord.getText().toString();
                 String jsonOutput = SjpAPI.getWord(wordToFind);
 
-
                 try {
                     meaningOfWordText.setText(wordToFind);
 
@@ -101,7 +97,7 @@ public class ArbiterActivity extends AppCompatActivity {
 
                     if (count == -1){
                         TextView use=new TextView(this);
-                        if(tournamentMode == true) {
+                        if(tournamentMode) {
                             use.setGravity(Gravity.CENTER_VERTICAL);
                             use.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
                             use.setTextSize(20);
@@ -111,7 +107,7 @@ public class ArbiterActivity extends AppCompatActivity {
                             use.setText("Nie znaleziono w słowniku");
                         linearLayout.addView(use);
                     }
-                    if (tournamentMode == true && count > 1)
+                    if (tournamentMode && count > 1)
                         count = 1;
 
                     for (int i = 0; i < count; i++) {
@@ -133,7 +129,7 @@ public class ArbiterActivity extends AppCompatActivity {
                         use.setTextSize(20);
                         linearLayout.addView(use);
 
-                        if (tournamentMode == false) {
+                        if (!tournamentMode) {
                             TextView varia = new TextView(this);
                             varia.setText("Od słowa: " + variant);
                             varia.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
