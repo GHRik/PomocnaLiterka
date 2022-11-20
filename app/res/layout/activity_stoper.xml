@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoperActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="start"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="32dp"
+        android:text="stop"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="4"
+                android:inputType="textPersonName"
+                android:maxLength="7"
+                android:singleLine="true"
+                android:text="Gracz1" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="4"
+                android:inputType="textPersonName"
+                android:maxLength="7"
+                android:text="Gracz2" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="4"
+                android:inputType="textPersonName"
+                android:maxLength="7"
+                android:text="Gracz3" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="4"
+                android:inputType="textPersonName"
+                android:maxLength="7"
+                android:text="Gracz4" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+        <TableLayout
+            android:id="@+id/tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNumberSigned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="4"
+                    android:inputType="numberSigned"
+                    android:maxLength="3" />
+
+                <EditText
+                    android:id="@+id/editTextNumberSigned2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="4"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"/>
+
+                <EditText
+                    android:id="@+id/editTextNumberSigned3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="4"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"/>
+
+                <EditText
+                    android:id="@+id/editTextNumberSigned4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="4"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNumberSigned5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="4"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"/>
+
+                <EditText
+                    android:id="@+id/editTextNumberSigned6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="4"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"/>
+
+                <EditText
+                    android:id="@+id/editTextNumberSigned7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="4"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"/>
+
+                <EditText
+                    android:id="@+id/editTextNumberSigned8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="4"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"/>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/spinner3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:ems="10"
+                android:text="Nowy wiersz" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:ems="10"
+
+                android:text="Usuń wiersz" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="Oblicz" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="Nowa gra" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

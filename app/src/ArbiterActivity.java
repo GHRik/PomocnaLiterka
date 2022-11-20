@@ -1,8 +1,5 @@
 package com.example.PomocnaLiterka;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.preference.PreferenceManager;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -25,6 +22,9 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -32,6 +32,7 @@ import java.io.IOException;
 import java.util.Objects;
 
 import sjpapi.api.SjpAPI;
+
 
 public class ArbiterActivity extends AppCompatActivity {
 

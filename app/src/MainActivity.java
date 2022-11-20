@@ -17,14 +17,20 @@ public class MainActivity extends AppCompatActivity {
         final Button stoper = (Button)findViewById(R.id.stoper);
         final Button rules = (Button)findViewById(R.id.rules);
         final Button arbiter = (Button)findViewById(R.id.arbiter);
+        final Button points = (Button)findViewById(R.id.stoper2);
 
         finder.setEnabled(false);
-        stoper.setEnabled(false);
         rules.setEnabled(false);
+        points.setEnabled(false);
 
         arbiter.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, ArbiterActivity.class);
             startActivity(intent);
+        });
+        stoper.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, StoperActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+            startActivityIfNeeded(intent,0);
         });
     }
 }
