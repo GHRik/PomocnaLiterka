@@ -15,8 +15,8 @@
 ```diff
 + [WIP] offline version, but online version is working ;)
 ```
-2. [WIP] "Word finder" - find any word you can put on the board and prioritizes word which max point you can get.
-3.  [WIP] "Stoper" - set time per round. It is sometimes neccesary when someone play too long.
+2. "Pomocnik" - Count time for long-time players. Table for points. You dont need paper and pen anymore!
+3. [WIP] "Word finder" - find any word you can put on the board and prioritizes word which max point you can get.
 4. [WIP] "Zasady gry" - all knows rules of "scrabble"/"literaki" game
 
 <a name="tech">.</a>
@@ -37,32 +37,13 @@ Used technology
 If there is any problem with install, please ***disable GooglePlay protect*** [how to disable](https://support.mobile-tracker-free.com/hc/en-us/articles/360005346953-How-to-disable-Google-Play-Protect-)
 
 ##### [IN FUTURE WHEN ALL FUNCTIO WILL BE TESTED]
-1. Download app from android store ;) **(link will be here)**
+1. On Google Play after 8.12! Be ready! 
 
 <a name="example">.</a>
 ## Examples:
 
 #### Demo Vid! Click on image below :)
-Working activity is "Arbiter" but it is in a "rough" state
-[![Arbiter_working](https://github.com/GHRik/PomocnaLiterka/blob/main/examplePNGForVid/Arbiter.PNG)](https://youtu.be/bmdElGHeX2w)
-
-
-
--------------------------------------------------------------------------------------------------------------------------------------
-Until all activity will be not projected , help yourself to my mocking photos :p
-
-##### Main Activity
-![Main_Activity](https://github.com/GHRik/PomocnaLiterka/blob/main/mockingPNG/main_activity.PNG?raw=true)
-
-##### Arbiter
-![Arbiter](https://github.com/GHRik/PomocnaLiterka/blob/main/mockingPNG/arbiter.PNG?raw=true)
-
-##### Stoper
-![Stoper](https://github.com/GHRik/PomocnaLiterka/blob/main/mockingPNG/stoper.PNG?raw=true)
-
-##### Poszukiwacz słów
-![Word_finder](https://github.com/GHRik/PomocnaLiterka/blob/main/mockingPNG/finder.PNG?raw=true)
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5LnZbj4Xtro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <a name="lic">.</a>
 ## License
