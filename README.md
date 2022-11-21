@@ -1,12 +1,14 @@
 # PomocnaLiterka
 ## Android app to easy menage your scrabble game.
 
+#### Demo Vid! Click on image below :)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/5LnZbj4Xtro/0.jpg)](https://www.youtube.com/watch?v=5LnZbj4Xtro)
+
 ## Table of contents
 1. [ Features ](#fea)
 2. [ Used technology ](#tech)
 3. [ Instalation ](#instal)
-4. [ Example using ](#example)
-5. [ License ](#lic)
+4. [ License ](#lic)
 
 <a name="fea">.</a>
 ## Features
@@ -38,12 +40,6 @@ If there is any problem with install, please ***disable GooglePlay protect*** [h
 
 ##### [IN FUTURE WHEN ALL FUNCTIO WILL BE TESTED]
 1. On Google Play after 8.12! Be ready! 
-
-<a name="example">.</a>
-## Examples:
-
-#### Demo Vid! Click on image below :)
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/5LnZbj4Xtro/0.jpg)](https://www.youtube.com/watch?v=5LnZbj4Xtro)
 
 <a name="lic">.</a>
 ## License
