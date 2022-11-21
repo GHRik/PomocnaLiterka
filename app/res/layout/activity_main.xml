@@ -41,32 +41,21 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Stoper"
+        android:text="POMOCNIK"
         app:layout_constraintEnd_toEndOf="@+id/rules"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/rules"
         app:layout_constraintTop_toBottomOf="@+id/arbiter" />
 
     <Button
-        android:id="@+id/stoper2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-
-        android:layout_marginTop="8dp"
-        android:text="Punkty"
-        app:layout_constraintEnd_toEndOf="@+id/rules"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/rules"
-        app:layout_constraintTop_toBottomOf="@+id/stoper" />
-
-    <Button
         android:id="@+id/rules"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="Zasady gry"
         app:layout_constraintEnd_toEndOf="@+id/finder"
         app:layout_constraintStart_toStartOf="@+id/finder"
-        app:layout_constraintTop_toBottomOf="@+id/space2" />
+        app:layout_constraintTop_toBottomOf="@+id/stoper" />
 
     <ImageView
         android:id="@+id/logo"
@@ -79,13 +68,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pomocna_literka_max" />
 
-    <Space
-        android:id="@+id/space2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="128dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stoper" />
 </androidx.constraintlayout.widget.ConstraintLayout>

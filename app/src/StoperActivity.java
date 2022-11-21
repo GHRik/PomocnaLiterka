@@ -6,8 +6,11 @@ import static java.lang.Math.abs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.icu.lang.UCharacter;
 import android.os.Bundle;
@@ -91,12 +94,22 @@ public class StoperActivity extends AppCompatActivity {
             }
         });
 
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Czy napewno chcesz rozpocząć nową grę? Wszystkie punkty zostaną skasowane")
+                .setNegativeButton("Powrót", null)
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        deleteRows();
+                        addRow();
+                        addRow();
+                    }
+                });
+        AlertDialog alert = builder.create();
+
         newGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                deleteRows();
-                addRow();
-                addRow();
+                alert.show();
             }
         });
 
@@ -130,7 +143,8 @@ public class StoperActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textView.setTextColor(Color.WHITE);
+                ColorStateList oldColors =  textView.getTextColors();
+                textView.setTextColor(oldColors);
                 button.setEnabled(false);
                 isRuning = true;
 
@@ -187,7 +201,10 @@ public class StoperActivity extends AppCompatActivity {
                 TableRow row = (TableRow)t1.getChildAt(j);
                 EditText text = (EditText)row.getChildAt(i);
                 if(text.getText() != null && text.getText().length() != 0){
-                    playerPoint[i] += Integer.parseInt(String.valueOf(text.getText()));
+                    int newPointValue = Integer.parseInt(String.valueOf(text.getText()));
+                    if (playerPoint[i]+newPointValue < Integer.MAX_VALUE){
+                        playerPoint[i] += newPointValue;
+                    }
                 }
             }
         }
