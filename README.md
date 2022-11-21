@@ -43,7 +43,7 @@ If there is any problem with install, please ***disable GooglePlay protect*** [h
 ## Examples:
 
 #### Demo Vid! Click on image below :)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5LnZbj4Xtro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/5LnZbj4Xtro/0.jpg)](https://www.youtube.com/watch?v=5LnZbj4Xtro)
 
 <a name="lic">.</a>
 ## License
