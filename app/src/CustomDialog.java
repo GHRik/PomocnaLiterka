@@ -1,4 +1,4 @@
-package com.example.PomocnaLiterka;
+package com.panasiuk.PomocnaLiterka;
 
 import android.app.Dialog;
 import android.content.Context;

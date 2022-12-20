@@ -77,7 +77,8 @@
                 android:inputType="textPersonName"
                 android:maxLength="7"
                 android:singleLine="true"
-                android:text="Gracz1" />
+                android:text="Gracz1"
+                android:autofillHints=""/>
 
             <EditText
                 android:id="@+id/editTextTextPersonName2"
@@ -86,7 +87,8 @@
                 android:ems="4"
                 android:inputType="textPersonName"
                 android:maxLength="7"
-                android:text="Gracz2" />
+                android:text="Gracz2"
+                android:autofillHints=""/>
 
             <EditText
                 android:id="@+id/editTextTextPersonName3"
@@ -95,7 +97,8 @@
                 android:ems="4"
                 android:inputType="textPersonName"
                 android:maxLength="7"
-                android:text="Gracz3" />
+                android:text="Gracz3"
+                android:autofillHints=""/>
 
             <EditText
                 android:id="@+id/editTextTextPersonName4"
@@ -104,7 +107,8 @@
                 android:ems="4"
                 android:inputType="textPersonName"
                 android:maxLength="7"
-                android:text="Gracz4" />
+                android:text="Gracz4"
+                android:autofillHints=""/>
         </TableRow>
 
     </TableLayout>

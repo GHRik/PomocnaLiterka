@@ -1,4 +1,4 @@
-package com.example.PomocnaLiterka;
+package com.panasiuk.PomocnaLiterka;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;

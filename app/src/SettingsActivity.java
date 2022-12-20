@@ -1,4 +1,4 @@
-package com.example.PomocnaLiterka;
+package com.panasiuk.PomocnaLiterka;
 
 import android.os.Bundle;
 import android.view.MenuItem;

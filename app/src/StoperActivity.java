@@ -1,4 +1,4 @@
-package com.example.PomocnaLiterka;
+package com.panasiuk.PomocnaLiterka;
 
 import static android.text.InputType.TYPE_CLASS_NUMBER;
 import static android.text.InputType.TYPE_NUMBER_FLAG_SIGNED;
@@ -12,17 +12,15 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
-import android.icu.lang.UCharacter;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.text.InputFilter;
-import android.text.InputType;
 import android.view.View;
 
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Filter;
 import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -50,6 +48,7 @@ public class StoperActivity extends AppCompatActivity {
 
         button = findViewById(R.id.button);
         textView = findViewById(R.id.textView);
+        ColorStateList oldColors =  textView.getTextColors();
         textView.setText(String.valueOf("02:00"));
         spinner = findViewById(R.id.spinner3);
         stopButton = findViewById(R.id.button2);
@@ -73,6 +72,30 @@ public class StoperActivity extends AppCompatActivity {
         spinner.setAdapter(ad);
 
         spinner.setSelection(2);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+                whichIndex = position;
+
+                if (isRuning == false) {
+                    counter = timeSec[whichIndex];
+                    int minutes = (counter % 3600) / 60;
+                    int seconds = (counter % 3600) % 60;
+                    if (seconds == 0) {
+                        textView.setText("0"+String.valueOf(Integer.toString(minutes) + ":" + Integer.toString(seconds) + "0"));
+                    } else {
+                        textView.setText("0"+String.valueOf(Integer.toString(minutes) + ":" + Integer.toString(seconds)));
+                    }
+                }
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+            }
+
+        });
 
         count.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -143,7 +166,6 @@ public class StoperActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ColorStateList oldColors =  textView.getTextColors();
                 textView.setTextColor(oldColors);
                 button.setEnabled(false);
                 isRuning = true;
