@@ -1,5 +1,6 @@
 # PomocnaLiterka
-## Android app to easy menage your scrabble game.
+## Android app to easy menage your scrabble game 
+[ >> Download <<](https://play.google.com/store/apps/details?id=com.panasiuk.PomocnaLiterka)
 
 #### Demo Vid! Click on image below :)
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/5LnZbj4Xtro/0.jpg)](https://www.youtube.com/watch?v=5LnZbj4Xtro)
@@ -35,11 +36,7 @@ Used technology
 <a name="instal">.</a>
 ## Installation
 
-1. Download [apk version](https://github.com/GHRik/PomocnaLiterka/blob/main/APK/PomocnaLiterka.apk) and install on your android phone
-If there is any problem with install, please ***disable GooglePlay protect*** [how to disable](https://support.mobile-tracker-free.com/hc/en-us/articles/360005346953-How-to-disable-Google-Play-Protect-)
-
-##### [IN FUTURE WHEN ALL FUNCTIO WILL BE TESTED]
-1. On Google Play after 8.12! Be ready! 
+1. Download [Google play store](https://play.google.com/store/apps/details?id=com.panasiuk.PomocnaLiterka) 
 
 <a name="lic">.</a>
 ## License
