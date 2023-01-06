@@ -40,5 +40,4 @@ Used technology
 
 <a name="lic">.</a>
 ## License
-all rights belong to Damian Panasiuk. Not for commercial used, not opensourced.
-I am trying create a app for scrabble lovers. This app will be available in android store , for free or for really small price.
+all rights belong to Damian Panasiuk. Not for commercial used.
